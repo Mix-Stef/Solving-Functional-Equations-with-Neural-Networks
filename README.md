@@ -8,4 +8,6 @@ $$\displaystyle \lim_{n \rightarrow \infty} | f(x)  - \sum_{i=0}^{n} a_{i} x^{i}
 
 $(a_{i})_{i=1}^{k}$ which will be used to approximate f as 
 
-$$\displaystyle f(x) \approx \sum_{i=0}^{k} a_{i} x^{i} $$
+$$\displaystyle f_{k}(x) \approx \sum_{i=0}^{k} a_{i} x^{i} $$
+
+The loss function for the neural network will be something like $|g(f_{k}(x)) - h(x)|$, which we will try to minimize. If we take a random sample (batch) of n points from the domain D, then the loss function becomes $$\mathbb{E}_{x \sim D} [|g(f_{k}(x)) - h(x)|]$$
