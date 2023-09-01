@@ -10,4 +10,4 @@ $(a_{i})_{i=1}^{k}$ which will be used to approximate f as
 
 $$\displaystyle f_{k}(x) \approx \sum_{i=0}^{k} a_{i} x^{i} $$
 
-The loss function for the neural network will be something like $|g(f_{k}(x)) - h(x)|$, which we will try to minimize. If we take a random sample (batch) of n points from the domain D, then the loss function becomes $$\displaystyle \mathbb{E}_{x \sim D} [|g(f(x)) - h(x)|]$$ MSE is also a good candidate. Generalization of this method to multi-variable functions would be an interesting extension.
+The loss function for the neural network will be something like $|g(f_{k}(x)) - h(x)|$, which we will try to minimize. If we take a random sample (batch) of n points from the domain D, then the loss function becomes $$\displaystyle \mathbb{E}_{x \sim D} [|g(f_k(x)) - h(x)|]$$ MSE is also a good candidate. Generalization of this method to multi-variable functions would be an interesting extension.
